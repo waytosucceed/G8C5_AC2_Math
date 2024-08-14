@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header {
+        width: 100%;
+        height: 90px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        padding: 20px;
+        display: flex;
+      }
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 800px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          height: 300px;
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+      table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 4px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="./assests/logo/logo1.png" alt="logo" class="company-logo" />
+        <img src="./assests/logo/logo2.png" alt="logo" class="company-logo" />
+      </div>
+
+      <div class="content-container">
+        <div class="lesson-title">Number sense (Prime and Composite Numbers)</div>
+
+        <div class="lesson-content">
+          <div>
+              
+            <h3><u>Prime Numbers</u></h3>
+            <p>
+              Prime numbers are numbers greater than 1 that have exactly two distinct factors: 1 and the number itself.
+              <br>
+              <b>Examples:</b>
+              <br><b>2</b>: Factors are 1 and 2.
+<br><b>3</b>: Factors are 1 and 3.
+<br><b>5</b>: Factors are 1 and 5.
+<br><b>7</b>: Factors are 1 and 7.
+<br><br>
+<b>Characteristics: </b>
+            </p>
+            <ul>
+              <li>2 is only even prime number</li>
+              <li>Prime number is always greater than 1.</li>
+              <li>Lowest odd prime number is 3</li>
+              <li>Every prime number greater than 3 can be represented by 6n</li>
+              <li>±1, where n is an integer.</li>
+            </ul>
+            <h3><u>Twin Primes</u></h4>
+           <p>
+            A pair of prime numbers that have a difference of 2.
+          <br><br>Twin primes are close to each other on the number line, with only one even number between them.
+          <br><br><b>Examples:</b> (3, 5), (5, 7), (11, 13), (17, 19)
+           </p>
+           
+           <h3><u>Co-prime numbers:</u></h3>
+           <p>
+            Co-prime numbers are the pairs of numbers that do not have any common factor other than 1.
+            
+            <br><br><b>Examples:</b> <br>
+            <b>(8, 15)</b>: The factors of 8 are 1, 2, 4, and 8. The factors of 15 are 1, 3, 5, and 15. The only common factor is 1, so 8 and 15 are co-prime.
+            <br><b>(14, 15)</b>: The factors of 14 are 1, 2, 7, and 14. The factors of 15 are 1, 3, 5, and 15. The only common factor is 1, so 14 and 15 are co-prime.
+          </p>
+          <ul>
+            <li>H.C.F = 1</li>
+            <li>May or may not be prime.</li>
+            <li>Mostly consecutive numbers are co-prime.</li>
+           </ul>
+           <h3><u>Composite numbers</u></h3>
+           <p>Composite numbers are numbers that are not prime. They have more than two factors.
+            <br><b>Examples:</b>
+            <ul>
+              <li><b>4</b>: Factors are 1, 2, and 4.</li>
+              <li><b>6</b>: Factors are 1, 2, 3, and 6.</li>
+              <li><b>8</b>: Factors are 1, 2, 4, and 8.</li>
+              <li><b>9</b>: Factors are 1, 3, and 9.</li>
+            </ul>
+            <b>Characteristics:</b>
+            <ul>
+              <li>Composite numbers can be <b>odd or even</b>.</li>
+              <li><b>1</b> is neither a prime nor a composite number.</li>
+              <li>They have <b>more than two factors</b>.</li>
+            </ul>
+            </p>
+            
+            <h3><u>Types of Composite Numbers</u></h3>
+            <p>
+              <b>Odd Composite Numbers</b>: Every odd integer which is not a prime number is known as an odd composite number. 
+<br><b>For example:</b> – 9, 15, 21, 25, 27, and 33 are odd composite numbers.
+<br><br>
+<b>Even Composite Number</b>: Every even integer which is not a prime number is known as an even composite number. 
+<br><b>For example:</b> 4, 6, 8,10, and 12 are even composite numbers.
+
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
